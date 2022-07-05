@@ -1,1 +1,1 @@
-Deploy Netlify :
+Belum Deploy ke Netlify
