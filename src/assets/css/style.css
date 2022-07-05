@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: 'mulish', sans-serif;
+}
+
+html,
+body {
+    font-family: 'mulish', sans-serif;
+    font-size: 100%;
+}
+
+html,
+body,
+.wrapper,
+.sct {
+    height: 100%;
+    margin: 0;
+}
+
+
+/* a {
+    text-decoration: none;
+    color: rgb(95, 46, 234);
+}
+
+*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "centerLeft centerRight";
+}
+
+.sct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand {
+    grid-area: centerLeft;
+    background-color: #2B156B;
+}
+
+.brand>img {
+    object-fit: cover;
+    opacity: 0.2;
+}
+
+.brand>h3 {
+    padding: .75rem;
+    font-weight: 800;
+    outline: 3px solid #fff;
+    color: #fff;
+}
+
+.image {
+    position: absolute;
+    display: flex;
+}
+
+.image-text {
+    position: absolute;
+    display: flex;
+    padding-top: 250px;
+    font-size: 50px;
+    color: white;
+}
+
+
+/* Right Side (Form Sign In)*/
+
+.right-side {
+    background-color: #fff;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    padding: 50px
+}
+
+.container {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.container p {
+    color: #5F2EEA;
+}
+
+.container b {
+    color: #5F2EEA;
+    text-decoration: none;
+}
+
+.form-group input {
+    border-radius: 9px;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -15px;
+    margin-top: -25px;
+    position: relative;
+    color: #A0A3BD;
+    z-index: 2;
+}
+
+.button {
+    display: flex;
+    margin-top: 20px
+}
+
+.btn-sign-up {
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+    color: #fff;
+    font-size: 16px;
+    background-color: #5F2EEA
+}
+
+.ncnm {
+    font-weight: 700;
+}
+
+.imgCinema {
+    margin-bottom: 1em;
+}
+
+.footer-p {
+    text-align: center;
+}
+
+.join-member {
+    text-align: center;
+    font-size: small;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(20%, 80vmax);
+        grid-template-areas: "centerLeft" "centerRight";
+    }
+}
